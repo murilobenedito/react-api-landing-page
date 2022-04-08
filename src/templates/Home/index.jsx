@@ -29,9 +29,11 @@ function Home() {
     const load = async () => {
       try {
         const data = await fetch(config.url + slug);
+        console.log(data);
         const json = await data.json();
-        console.log(mapData(json.data));
-        const pageData = mapData(json.data);
+        console.log(json);
+        const pageData = mapData(json);
+        console.log(pageData);
         setData(pageData[0]);
       } catch (e) {
         setData(undefined);

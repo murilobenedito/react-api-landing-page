@@ -1,5 +1,5 @@
 export default {
-  url: 'http://localhost:1337/api/pages/?slug=',
+  url: 'http://drdgw.mocklab.io/api/pages',
   siteName: 'Murilo Benedito',
-  defaultSlug: 'landing-page',
+  defaultSlug: '',
 };
