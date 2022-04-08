@@ -60,7 +60,6 @@ export const mapSectionContent = (section = {}) => {
 
 export const mapTextGrid = (section = {}) => {
   const {
-    __component: component = '',
     title = '',
     description = '',
     metadata: { background = false, section_id: sectionId = '' } = false,
@@ -85,7 +84,6 @@ export const mapTextGrid = (section = {}) => {
 
 export const mapImageGrid = (section = {}) => {
   const {
-    __component: component = '',
     title = '',
     description = '',
     metadata: { background = false, section_id: sectionId = '' } = false,
@@ -99,9 +97,7 @@ export const mapImageGrid = (section = {}) => {
     sectionId,
     description,
     grid: grid.map((img) => {
-      const {
-        image: { url: srcImg = '', alternativeText: altText = '' } = '',
-      } = img;
+      const { image: { url: srcImg = '', alternativeText: altText = '' } = '' } = img;
       return {
         srcImg,
         altText,
